@@ -1,2 +1,2 @@
 # vault-eks-workshop
-Vault EKS workshop
+Vault EKS Workshop
