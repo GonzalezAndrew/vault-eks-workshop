@@ -33,10 +33,11 @@ locals {
   name     = "eks-learning-module"
   vpc_cidr = "10.0.0.0/16"
   azs      = slice(data.aws_availability_zones.available.names, 0, 3)
-
+  region   = var.region
   tags = {
-    owner                = "andy.gonzalez@docusign.com"
+    owner                = "andy.gonzalez"
     automate-provisioner = "terraform"
+    environment          = "sandbox"
   }
 }
 
