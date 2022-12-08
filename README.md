@@ -25,5 +25,6 @@ kubectl exec -it vault-0 -n vault -- vault operator unseal <key 3>
 kubectl get pods -n vault | grep vault
 
 # to access web console, port foward and visit http://localhost:8200/ui
+# docs on vault ui https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-raft-deployment-guide?in=vault%2Fkubernetes#vault-ui
 kubectl port-forward service/vault-active 8200:8200 --namespace=vault
 ```
